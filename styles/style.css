@@ -86,7 +86,9 @@ fieldset {
   display: flex;
   width: fit-content;
   gap: 5px;
-  cursor: pointer;
+  cursor: text;
+  padding: 1px;
+  margin: 0 0 1px 1px;
 }
 
 .search-form__textfield {
@@ -100,6 +102,22 @@ fieldset {
   width: 225px;
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:active {
+  border: solid 1px #fff;
+}
+
+.search-form__label:has(:active) {
+  outline: none;
 }
 
 .search-form__checkbox-list {
