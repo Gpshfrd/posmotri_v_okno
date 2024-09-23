@@ -79,19 +79,27 @@ fieldset {
 .search-form__fieldset-title {
   font-weight: normal;
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .search-form__label {
   display: flex;
   width: fit-content;
-  cursor: pointer;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__textfield {
   appearance: none;
+  all: unset;
+  color: rgb(255, 255, 255, 0.7);
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
+  background-color: transparent;
+  height: 27px;
+  width: 225px;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
 }
 
 .search-form__checkbox-list {
@@ -103,6 +111,26 @@ fieldset {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.button {
+  appearance: none;
+  all: unset;
+  border: solid 1px #fff;
+  cursor: pointer;
+  height: 34px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
+  width: 99%;
 }
 
 .content__details {
@@ -115,7 +143,6 @@ fieldset {
 
 .title {
   font-family: 'Oswald', sans-serif;
-  font-weight: bold;
   text-transform: uppercase;
   font-size: 75px;
   line-height: 94%;
@@ -155,7 +182,6 @@ fieldset {
 
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
-  font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -167,6 +193,7 @@ fieldset {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  margin: 2px 2px 2px 0;
 }
 
 .visually-hidden {
